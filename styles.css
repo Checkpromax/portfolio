@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  transition: background-color 0.5s ease;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.5s ease;
+}
+.card-3d {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card-3d:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.4);
+}
+html {
+  scroll-behavior: smooth;
+}
+.progress-bar {
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+.dark body {
+  background: #121212;
+}
+.dark .glass {
+  background: rgba(255 255 255 / 0.05);
+  border-color: rgba(255 255 255 / 0.1);
+  box-shadow: 0 8px 32px rgba(255 255 255 / 0.1);
+}
+nav a.active {
+  color: #3b82f6;
+  font-weight: 700;
+}
+input,
+textarea {
+  min-width: 0;
+  font-size: 1rem;
+}
+@media (max-width: 640px) {
+  textarea {
+    resize: none;
+  }
+}
